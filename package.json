@@ -5,9 +5,7 @@
     "dev": "nuxt dev",
     "generate": "cross-env APP_MODE=\"production\" nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare",
-    "deploy": "npm run build && sls deploy --aws-profile hi-aws",
-    "deploy:prod": "npm run build && sls deploy"
+    "postinstall": "nuxt prepare"
   },
   "devDependencies": {
     "@mdi/font": "^2.2.43",

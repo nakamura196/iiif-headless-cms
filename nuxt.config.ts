@@ -128,9 +128,5 @@ export default defineNuxtConfig({
     define: {
       "process.env.DEBUG": false,
     },
-  },
-  nitro: {
-    preset: "aws-lambda",
-    serveStatic: true,
-  },
+  }
 });
