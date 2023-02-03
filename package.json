@@ -1,7 +1,7 @@
 {
   "private": true,
   "scripts": {
-    "build": "nuxt build",
+    "build": "cross-env APP_MODE=\"production\" nuxt build",
     "dev": "nuxt dev",
     "generate": "cross-env APP_MODE=\"production\" nuxt generate",
     "preview": "nuxt preview",
