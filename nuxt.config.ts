@@ -3,18 +3,11 @@ import ja from "./locales/ja.json";
 
 const getBaseUrl = () => {
   const environment = process.env.APP_MODE;
-
   switch (environment) {
-    /*
-    case "staging":
-      return "";
-    case "development":
-      return "";
-    */
     case "production":
-      return process.env.baseURL_prod; // "https://nakamura196.github.io";
+      return process.env.baseURL_prod;
     default:
-      return process.env.baseURL; // "";
+      return process.env.baseURL;
   }
 };
 
@@ -23,8 +16,6 @@ const baseURL = getBaseUrl();
 const title = process.env.title;
 const description = process.env.description;
 const keywords = process.env.keywords;
-const app_baseURL = process.env.baseURL;
-
 const image = `${baseURL}/favicon.ico`;
 
 export default defineNuxtConfig({
@@ -39,10 +30,7 @@ export default defineNuxtConfig({
       accessToken: process.env.contentful_accessToken,
     },
     public: {
-      // hostname,
       baseURL,
-      app_baseURL,
-      
       title,
       description
     },
@@ -62,7 +50,6 @@ export default defineNuxtConfig({
     },
   },
   app: {
-    baseURL: app_baseURL, // process.env.baseURL, // /<reponame>
     head: {
       htmlAttrs: {
         lang: "ja",
@@ -108,16 +95,10 @@ export default defineNuxtConfig({
           href: image,
         },
       ],
-      /*
-      script: [
-        { src: 'https://cse.google.com/cse.js?cx=4559167e9a750478b', async: true  }
-      ],
-      */
     },
   },
   css: [
     "vuetify/lib/styles/main.sass",
-    // "mdi/css/materialdesignicons.min.css",
     "@/assets/styles/main.css",
   ],
 

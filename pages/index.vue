@@ -22,7 +22,7 @@ const { data } = await useAsyncData("home", () => queryContent("/").findOne());
             size="x-large"
             block
             :href="`/mirador?manifest=/api/iiif/contentful/123/manifest`"
-            >contentful</v-btn
+            >Contentful</v-btn
           >
         </v-col>
         <v-col>
