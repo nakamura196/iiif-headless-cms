@@ -25,7 +25,7 @@ const description = process.env.description;
 const keywords = process.env.keywords;
 const app_baseURL = process.env.baseURL;
 
-const image = "https://img.webcatplus.jp/favicon.ico";
+const image = `${baseURL}/favicon.ico`;
 
 export default defineNuxtConfig({
   runtimeConfig: {
