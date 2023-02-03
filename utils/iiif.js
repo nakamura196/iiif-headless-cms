@@ -33,7 +33,7 @@ const createManifest = (prefix, id, label, images) => {
 
     const manifest = {
         "@context": "http://iiif.io/api/presentation/2/context.json",
-        "@id": `${item_prefix}/manifest.json`,
+        "@id": `${item_prefix}/manifest`,
         "@type": "sc:Manifest",
         label: label,
         sequences: [
