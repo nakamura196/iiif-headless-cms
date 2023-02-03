@@ -1,0 +1,1 @@
+Headless CMSを使ってIIIFを実現する

@@ -1,0 +1,43 @@
+em {
+  background-color: #FFF59D;
+  color: black;
+}
+
+.v-expansion-panel-text__wrapper {
+  padding: 0 !important;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+tbody tr:nth-of-type(odd) {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+* {
+  text-transform: none !important;
+}
+a {
+  text-decoration: none !important;
+}
+
+.v-pagination__navigation {
+  box-shadow: none !important;
+}
+
+.v-pagination__item {
+  box-shadow: none !important;
+}
+
+.v-card--variant-outlined {
+  border: thin solid lightgray !important;
+}
+
+.loading {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+a {
+  color: rgba(33, 150, 243);
+}

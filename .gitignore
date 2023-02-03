@@ -1,0 +1,25 @@
+node_modules
+*.log*
+.nuxt
+.nitro
+.cache
+.output
+# .env
+dist
+
+# Local Netlify folder
+.netlify
+
+// Add directory
+.netlify
+.git
+dist
+.vscode
+.DS_Store
+
+.serverless
+
+.firebase*
+firebase.json
+
+~*
