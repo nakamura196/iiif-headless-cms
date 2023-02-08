@@ -30,7 +30,7 @@ export default defineEventHandler(async (event) => {
   const results = [];
 
   for (const item of spl) {
-    const values = item.replace("*", "").split(" - ");
+    const values = item.replace("*", "").split("-");
     const value = values[1].trim();
 
     const result = {

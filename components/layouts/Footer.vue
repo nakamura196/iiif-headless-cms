@@ -1,11 +1,9 @@
 <script setup lang="ts">
 const menus: any[] = [
-  /*
   {
-    label: "公開コンテンツの概要",
-    to: "/page/introduction",
+    label: "ジャパンサーチのウェブパーツ",
+    to: "/jps",
   },
-  */
 ];
 </script>
 
